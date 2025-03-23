@@ -1,0 +1,16 @@
+.legal-page {
+  text-align: center;
+  padding: 3rem;
+  background: url("../../assets/images/bg-texture.png");
+  margin-top: 6rem;
+  height: 100vh;
+}
+
+.legal-page section {
+  background: var(--color-bg-1);
+  margin-top: 6rem;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}

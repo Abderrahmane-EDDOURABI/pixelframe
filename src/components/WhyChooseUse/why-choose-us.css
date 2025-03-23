@@ -1,0 +1,73 @@
+.why-choose-us {
+  text-align: center;
+  margin-block: 6rem;
+  height: max-content;
+}
+
+.why-choose-us h2 {
+  font-size: 2.5rem;
+  color: var(--color-white);
+}
+
+.why-choose-us p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: var(--color-light);
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: .5rem;
+  margin: auto;
+}
+
+.advantage-card {
+  background: var(--color-bg-1);
+  padding: 2rem;
+  border-radius: var(--card-border-radius-1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: var(--transition);
+  height: 13rem;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon svg {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.advantage-card h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: var(--color-white);
+}
+
+.advantage-card p {
+  font-size: 1rem;
+  color: var(--color-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+  .advantage-card {
+    height: max-content;
+    width: 90%;
+    margin-inline: auto;
+  }
+  .why-choose-us h2 {
+    font-size: 1.8rem;
+    color: var(--color-white);
+  }
+  .why-choose-us p {
+    font-size: 1rem;
+    color: var(--color-light);
+  }
+}

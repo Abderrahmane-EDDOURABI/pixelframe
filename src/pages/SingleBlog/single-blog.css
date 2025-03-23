@@ -1,0 +1,98 @@
+.singlepost {
+    margin: 6rem 0 2rem;
+    width: 50%;
+    margin-inline: auto;
+    background: var(--color-bg-1);
+    padding-block: 4rem;
+    box-shadow: 0 2rem 1rem .6rem rgba(0, 0, 0, 0.5);
+}
+
+.singlepost__container {
+    width: var(--form-width);
+    background: var(--color-gray-900);
+    padding: 1rem 2rem 3rem;
+}
+
+.singlepost__container p {
+    margin: 1rem;
+    line-height: 1.7;
+}
+
+.singlepost__thumbnail {
+    margin: 1rem 0 1rem;
+}
+
+
+.single-blog__comments {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2%;
+}
+
+.single-blog__add-comment {
+    width: 100%;
+    padding: 4rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.single-blog__add-comment input {
+    height: 4rem;
+    width: 24rem;
+    border: 2px solid var(--color-primary);
+    transition: var(--transition);
+}
+.single-blog__add-comment button {
+    height: 4rem;
+    width: fit-content;
+    padding: 1rem;
+    border: 2px solid var(--color-primary);
+    transition: var(--transition);
+    font-size: 1rem;
+    background: var(--color-primary);
+    color: var(--color-bg-1);
+    border-radius: var(--card-border-radius-2);
+    cursor: pointer;
+}
+.single-blog__add-comment button:hover {
+    color: var(--color-white);
+    background: transparent;
+}
+
+.single-blog__actions {
+    display: flex;
+    width: 100%;
+    margin-inline: auto;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+.single-blog__actions button {
+    width: 7rem;
+    height: 2rem;
+    transition: var(--transition);
+    border-radius: var(--card-border-radius-2);
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+}
+@media screen AND (max-width: 1024px) {
+   .singlepost__container {
+    width: var(--container-width-md);
+   }
+}
+
+@media screen AND (max-width: 600px) {
+    .singlepost__container { 
+        background: transparent;
+        padding: 0;
+        width: var(--container-width-md);
+    }
+
+    .singlepost {
+        width: 100%;
+    }
+}

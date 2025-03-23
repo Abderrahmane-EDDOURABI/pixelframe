@@ -1,0 +1,5 @@
+.blogs {
+    background: url("../../assets/images/bg-texture.png");
+    height: max-content;
+    padding-block: 6rem;
+}

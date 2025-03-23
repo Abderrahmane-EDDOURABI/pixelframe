@@ -1,0 +1,85 @@
+.pricing {
+  margin-top: 6rem;
+}
+
+.pricing-page {
+  text-align: center;
+}
+
+.pricing-page h2 {
+  font-size: 2.5rem;
+}
+
+.pricing-page h3 {
+  margin-block: 2rem;
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 4rem;
+}
+
+.pricing-card {
+  background: var(--color-bg-1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: var(--transition);
+  height: 20rem;
+}
+
+.pricing-card:hover {
+  transform: scale(1.02);
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.custom-service {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-service h3 {
+  margin-block: 0;
+  padding: 0;
+}
+.custom-service p {
+  margin-block: 0;
+  padding: 0;
+}
+
+@media screen AND (max-width: 767px) {
+  .pricing-table {
+    flex-direction: column;
+  }
+  .pricing-page h2 {
+    font-size: 2rem;
+  }
+
+  .pricing-card {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .custom-service h3 {
+    font-size: 1.6rem;
+  }
+  .custom-service p {
+    font-size: 1rem;
+  }
+  
+}

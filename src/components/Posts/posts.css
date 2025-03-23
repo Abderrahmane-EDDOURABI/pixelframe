@@ -1,0 +1,42 @@
+.post__thumbnail:hover {
+    filter: saturate(0);
+    transition: filter 0.3s ease;
+  }
+  
+  .posts__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-block: 5rem;
+  }
+
+  .post__info h3 a {
+    font-size: 1.7rem;
+    width: 100%;
+    display: block;
+    margin-block: .7rem;
+  }
+  
+  .post__autor {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  @media screen AND (max-width: 1024px) {
+    .posts__container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+  }
+  
+  @media screen AND (max-width: 768px) {
+      .posts__container {
+          grid-template-columns: 1fr;
+      }
+      .post__info h3 a {
+        font-size: 1rem;
+      }
+  }
+  

@@ -1,0 +1,125 @@
+.gallery {
+  padding-block: 6rem;
+  height: max-content;
+  background: url('../../assets/images/bg-texture.png');
+}
+
+.gallery-page {
+  text-align: center;
+}
+
+.filters {
+  margin-block: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.filters button {
+  padding: 0.7rem;
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  background: var(--color-bg-4);
+  color: var(--color-primary);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  transition: var(--transition);
+}
+
+.filters button:hover {
+  background: var(--color-bg-1);
+  color: var(--color-white);
+}
+
+.filters button.active {
+  background: var(--color-primary);
+  color: var(--color-bg-1);
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.exhibitions__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+  gap: 1rem;
+}
+
+.exhibitions__gallery article {
+  border: 0.5rem solid var(--color-bg-4);
+  transition: var(--transition);
+}
+
+.exhibitions__gallery article:nth-child(1) {
+  grid-row: 1/2;
+}
+.exhibitions__gallery article:nth-child(8) {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.exhibitions__gallery article:nth-child(9) {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.exhibitions__gallery article:nth-child(13) {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.exhibitions__gallery article img {
+  height: 100%;
+  filter: saturate(0);
+  transition: var(--transition);
+}
+
+.exhibitions__gallery article:hover img {
+  filter: saturate(1);
+}
+
+.exhibitions__gallery article:hover {
+  box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+@media screen AND (max-width: 1367px) {
+  .exhibitions__gallery {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+
+  .exhibitions__gallery article {
+    border: none;
+  }
+}
+
+@media screen AND (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .filters button {
+    width: 100%;
+  }
+
+  .exhibitions__gallery {
+    display: block;
+  }
+
+  .exhibitions__gallery article {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 1rem;
+  }
+}

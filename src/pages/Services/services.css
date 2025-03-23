@@ -1,0 +1,153 @@
+.services {
+  margin-top: 6rem;
+}
+
+/* Introduction Section */
+.intro-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--color-white);
+  }
+  
+  .intro-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Categories Section */
+  .categories-section {
+    padding: 3rem 2rem;
+    color: var(--color-white);
+  }
+  
+  .categories-section h2,
+  .portfolio-section h2,
+  .testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .category-card {
+    background-color: var(--color-bg-4);
+    border-radius: var(--card-border-radius-2);
+    padding: 2rem;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+  }
+  
+  .category-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .category-card p {
+    font-size: 1rem;
+  }
+  
+  /* Portfolio Section */
+  .portfolio-section {
+    padding: 3rem 2rem;
+    color: var(--color-white);
+  }
+  
+  .portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-block: 4rem;
+  }
+  
+  .portfolio-item {
+    width: 30rem;
+    height: 37rem;
+    background: var(--color-bg-2);
+    padding: 1rem;
+    border-radius: var(--card-border-radius-2);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .portfolio-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--card-border-radius-1);
+    margin-bottom: 1rem;
+  }
+  
+  .portfolio-item p {
+    font-size: 1rem;
+  }
+  
+  /* Booking Section */
+  .booking-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    color: var(--color-white);
+  }
+  
+  .booking-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .booking-section p {
+    font-size: 1.2rem;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    color: var(--color-white);
+  }
+  
+  .testimonial {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .categories {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .category-card {
+      flex: 1 1 100%;
+      max-width: 90%;
+    }
+  
+    .portfolio {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .portfolio-item {
+      width: 80%;
+    }
+  }
